@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HtmlDevoir</title>
+</head>
+<body>
+    <h2>Ajout d'un enseignant</h2>
+        <br>
+        <fieldset>
+            <legend><h1>Informations personnelles</h1></legend>
+            <label>Nom</label>
+                <br>
+                <input type="text" placeholder="Nom">
+                <br>
+            <br>
+            <label>Prénom</label> 
+                <br>  
+                    <input type="text" placeholder="Prénom">
+                <br>
+            <br>
+            <label>Date de naissance</label>
+                <br>
+                    <input type="date" placeholder="Date de naissance">
+                <br>    
+            <br>
+            <label>Email</label>
+                <br>
+                    <input type="email" placeholder="Adresse électronique">
+                    <abbr title="Email est unique dans la base">?</abbr>
+                <br>
+            <br>
+            <label>Confirmation email</label>
+                <br>
+                    <input type="email" placeholder="Adresse électronique">
+                <br>
+            <br>
+                <label>Adresse</label>
+                <br>
+                    <textarea rows="5" cols="30">
+                    </textarea>
+                <br>
+            <br>
+            <label>Sexe</label>
+            <br>
+                <div>
+                    <input type="radio" id="Gender_choice1" name="Gender" value="Homme">
+                    <label for="Gender_choice1">Homme</label>
+                
+                    <input type="radio" id="Gender_choice2" name="Gender" value="Femme">
+                    <label for="Gender_choice2">Femme</label>
+                </div>  
+            <br>
+                <label>Grade</label>
+            <br>
+                <select size="5">
+                    <option>-------</option>
+                    <option>Assistant</option>
+                    <option>Chargé de cours</option>
+                    <option>MCA</option>
+                    <option>MCB</option>
+                    <option>Professeur</option>
+                    <option>Autre</option>
+                </select>
+        <br><br>
+        <label>Dernier diplôme</label>
+        <br>
+        <input list="Diplomes" placeholder="Dernier diplome">
+            <datalist id="Diplomes">
+                <option>Doctorat</option>
+                <option>Thèse d'état</option>
+                <option>Nouvelle thèse</option>
+                <option>Master</option>
+                <option>Ingéniorat</option>
+            </datalist>
+        <br><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                <h1>Enseignements et recherche</h1>
+            </legend>
+            <button>+</button>
+            <label>Modules théoriques</label>
+            <br>
+            <br>
+                <div>
+                    <input type="checkbox" id="Théorie des graphes" name="Théorie des graphes">
+                    <label>Théorie des graphes</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Théorie des langages" name="Théorie des langages">
+                    <label>Théorie des langages</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Logique mathématiques" name="Logique mathématiques">
+                    <label>Logique mathématiques</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Complexité et décidabilité" name="Complexité et décidabilité">
+                    <label>Complexité et décidabilité</label>
+                </div>
+            <br>
+            <button>+</button>
+                <label>Modules de programmation</label>
+            <br>
+            <br>
+                <div>
+                    <input type="checkbox" id="Algorithmique" name="Algorithmique">
+                    <label>Algorithmique</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Programmation objets" name="Programmation objets">
+                    <label>Programmation objets</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Programmation web" name="Programmation web">
+                    <label>Programmation web</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Programmation fonctionnelle" name="Programmation fonctionnelle">
+                    <label>Programmation fonctionnelle</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Assembleur" name="Assembleur">
+                    <label>Assembleur</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Prolog" name="Prolog">
+                    <label>Prolog</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Python et data science" name="Python et data science">
+                    <label>Python et data science</label>
+                </div>
+            <br>
+            <button>+</button>
+            <label>Modules de conception et analyse</label>
+            <br>
+            <br>
+                <div>
+                    <input type="checkbox" id="Génie logiciel" name="Génie logiciel">
+                    <label>Génie logiciel</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Base de données" name="Base de données">
+                    <label>Base de données</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Base de données avancée" name="Base de données avancée">
+                    <label>Base de données avancée</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="UML" name="UML">
+                    <label>UML</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="UML avancé" name="UML avancé">
+                    <label>UML avancé</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Intelligence artificielle" name="Intelligence artificielle">
+                    <label>Intelligence artificielle</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Big Data" name="Big Data">
+                    <label>Big Data</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Cloud computing" name="Cloud computing">
+                    <label>Cloud computing</label>
+                </div>
+        <br>
+        <br> 
+            <button>Sauvegarder</button>
+            <button>Annuler</button>
+        </fieldset>
+</body>
+</html>
