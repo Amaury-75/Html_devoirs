@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <metcharset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DOM</title>
+        <script type="text/javascript" src="button.js"></script>
+        <style>
+            #div1{
+                background-color: yellow;
+                height: 150px;
+                width: 150px;
+                position: relative;
+                float: left;
+            }
+            #div2{
+                background-color: blue;
+                height: 150px;
+                width: 150px;
+                position: relative;
+                float: left;
+            }
+            #div3{
+                background-color: red;
+                height: 150px;
+                width: 150px;
+                position: relative;
+                float: left;
+            }
+            #button{
+                font-size: large    ;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1"></div>   
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+        <button id="button" onclick="changer()">Changer</button>
+        <br><br><br><br><br>
+        <div>
+            <h2 style="font-family: sans-serif;">Liste des artistes</h2> 
+                <select id="liste_artiste" size="3" onchange="detail()">
+                    <option value="0">______________</option>
+                </select>
+            <h3 style="font-family: sans-serif;">Ajout d'un artiste</h2> 
+                <input id="add" placeholder="Ajoutez un artiste">
+                <button onclick="ajouter()">Ajoutez</button>
+            <h3 style="font-family: sans-serif;">Suppression d'un artiste</h2>
+                <input id="sup" placeholder="Supprimer un artiste">
+                <button onclick="supprimer()">Supprimer</button>    
+        </div>
+    </body>
+</html>
